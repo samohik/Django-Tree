@@ -1,0 +1,16 @@
+{% extends 'menu/base.html' %}
+{% load draw_menu %}
+
+{% block content %}
+<h3>here!</h3>
+
+<div class="container">
+    {% for val in menu %}
+      {% if val %}
+        {% draw_menu val %}
+      {% endif %}
+    {% endfor %}
+
+  <h3>Вы находитесь на странице: {{ request.get_full_path }}</h3>
+</div>
+{% endblock %}

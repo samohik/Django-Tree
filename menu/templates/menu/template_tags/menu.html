@@ -1,0 +1,11 @@
+{% load draw_menu %}
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="navbar-collapse" id="navbarNav">
+      Title: {{ menu.title }}<br>
+
+<!--  Выпадающее меню  -->
+    {% drop_down query=menu %}
+
+  </div>
+</nav>

@@ -1,0 +1,29 @@
+{% if items %}
+
+<!-- Start Выпадающее меню -->
+<ul class="nav navbar-nav">
+  <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <a href="{{ item.get_absolute_url }}">
+
+<!-- Start window -->
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            {% for item in items %}
+              <a class="dropdown-item">
+                <a href="{{ item.get_absolute_url }}">
+                  {{ item.title }}<br>
+                </a>
+              </a>
+            {% endfor %}
+          </div>
+<!-- End window -->
+
+      </a>
+    </a>
+  </li>
+</ul>
+
+{% else %}
+  Nothing
+{% endif %}
+<!-- End Выпадающее меню -->
