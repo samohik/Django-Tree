@@ -1,5 +1,6 @@
 # Django-Tree
-Instructions:  
+Instructions: 
+```pip install -r requirements.txt  
 ```python manage.py migrate --run-syncdb```  
 ```python manage.py test```  
 ```python manage.py createsuperuser```  
