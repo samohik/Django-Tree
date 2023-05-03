@@ -5,4 +5,5 @@ Instructions:
 ```python manage.py test```  
 ```python manage.py createsuperuser```  
 ```python manage.py runserver```  
-Create multiple menus. 
+Create multiple menus.  
+Then create items for menu.  
